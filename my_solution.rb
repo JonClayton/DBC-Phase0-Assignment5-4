@@ -86,9 +86,10 @@ def my_hash_splitting_method(source, age)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-# #partition -- makes two arrays from one, placing elements that satisfy boolean into the first array, all others into the second array.
+# #partition -- makes two arrays from one, placing elements that satisfy boolean into 
+#               the first array, all others into the second array.
 # #to_a -- makes an array out of the elements of a hash
-#
+# #is_a? -- tests whether the object is a member of a specific class
 
 #--------------------------------------------------------------------
 # Person 1: Shawn Spears
@@ -104,8 +105,8 @@ end
 # 	thing_to_find)
 
 # ** Methods used in my_hash_finding_method **
-# 	hash.select -- returns a hash containing the key/value pairs for the conditions indicated
-#   .keys -- returns an array of the keys of the key/value pairs indicated
+#  	hash.select -- returns a hash containing the key/value pairs for the conditions indicated
+#   	.keys -- returns an array of the keys of the key/value pairs indicated
 
 # 2. Teach your accountability group how to use the methods
 # 	Both of the methods I created were fairly similar in that they both relied on the .select
@@ -127,35 +128,74 @@ end
 #--------------------------------------------------------------------
 # Person 2: Trevor Newcomb
 
-# Release 1: Identify and describe the Ruby method you implemented. Teach your
-# accountability group how to use the methods.
-# I used .map!, .is_a?, and .each
-#  .map!  - This method just inputs new values into an array.
-#   is_a?  - This checks if an element is a certain thing, so is_a?(Integer) checks if an element is an integer.
-#   .each  - This just iterates through an array or hash.
+# Release 2: Teach Others
 
-# Release 3: Reflect!
-# What did you learn about researching and explaining your research to others?
-# I learned that the best way to parse Ruby Docs is to really know what kind of method you need by looking for it in another way, like stack overflow, and then instead of looking at answers people have posted, just take away some recommended methods to use and try them out to see how they work, using Ruby Docs as a guideline.
+# 1. Identify and describe the Ruby method(s) you implemented.
+#  	.map!  - This method just inputs new values into an array.
+#	.is_a?  - This checks if an element is a certain thing, so is_a?(Integer) checks if an element is an integer.
+#   	.each  - This just iterates through an array or hash.
+
+# 2. Teach your accountability group how to use the methods
+
+
+# 3. Share any tricks you used to find and decipher the Ruby Docs
+# 	What did you learn about researching and explaining your research to others?
+# 	I learned that the best way to parse Ruby Docs is to really know what kind of method you need 
+# 	by looking for it in another way, like stack overflow, and then instead of looking at answers people
+# 	have posted, just take away some recommended methods to use and try them out to see how they work,
+# 	using Ruby Docs as a guideline.
 
 #--------------------------------------------------------------------
 # Person 3: ??????
 
+# Release 2: Teach Others
+
+# 1. Identify and describe the Ruby method(s) you implemented.
+#	Answer here
+
+# 2. Teach your accountability group how to use the methods
+# 	Answer here
+
+# 3. Share any tricks you used to find and decipher the Ruby Docs
+#	Answer here
+
 #--------------------------------------------------------------------
 # Person 4: ??????
+
+# Release 2: Teach Others
+
+# 1. Identify and describe the Ruby method(s) you implemented.
+#	Answer here
+
+# 2. Teach your accountability group how to use the methods
+# 	Answer here
+
+# 3. Share any tricks you used to find and decipher the Ruby Docs
+#	Answer here
 
 #--------------------------------------------------------------------
 # Person 5: Jon Clayton
 
-# Release 1: Identify and describe the Ruby method you implemented. Teach your
-# accountability group how to use the methods.
-# #partition works elegantly to separate a set of values into two arrays.
-# All you need it a boolean to sort by and use the familiar {|element| expression}
-# that we've seen with #map/#collect.
-#
-# Release 3: Reflect!
-# What did you learn about researching and explaining your research to others?
-# I enjoy researching to find just the right method from Ruby's rich assortment.
-# I think explaining is all about illustrating the use of methods, ideally in a
-# way that prove the method is useful to the audience. A written description is 
-# otherwise unlikely to receive enough focus to sink in.
+# Release 2: Teach Others
+
+# 1. Identify and describe the Ruby method(s) you implemented.
+# 	#partition -- makes two arrays from one, placing elements that satisfy boolean into 
+#       	      the first array, all others into the second array.
+# 	#to_a -- makes an array out of the elements of a hash or Enumerator
+#	#is_a? -- tests whether the object is a member of a specific class
+
+# 2. Teach your accountability group how to use the methods
+#	#partition works elegantly to separate a set of values into two arrays.
+# 	All you need it a boolean to sort by and use the familiar {|element| expression}
+# 	that we've seen with #map/#collect.  So array.partition {|element| boolean}
+#	#to_a turns a hash into an array with each key/value combination an element in the array.
+#	#is_a?  Trevor doesn't need to be told about #is_a since I borrowed it from him!
+#		You just put a class name after it: object_name.is_a?(Class_name).  
+#		Note that Class_name is capitalized and not in quotes.  This threw me off.
+
+# 3. Share any tricks you used to find and decipher the Ruby Docs
+#	I really just browse them.  Each time I see more methods than I'll actually use
+#	to solve the current problem, and that means I might remember those methods the
+#	next time. So often I do think "I think I saw a method that might do this..."
+#	I'm also curious about what version of Ruby Docs is the "right" one given 
+#	Coderpad is running 2.2.3 and my laptop, following the DBC instructions, is running 2.2.1
