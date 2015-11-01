@@ -7,17 +7,42 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
- # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+	p source.select {|word| word.to_s.include?(thing_to_find)}
 end
 
 def my_hash_finding_method(source, thing_to_find)
-# This line is here to make sure all tests initially fail. Delete it when you begin coding.
+	p source.select {|key, value| value == thing_to_find}.keys
 end
 
+# RELEASE 1
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+
+# ** Methods used in my_array_sorting_method **
+# 	array.select -- returns an array containing the elements for the conditions indicated
+# 	to_s -- turns element into string (this was used to account for the integers in the array)
+# 	.include? -- checks if element includes object (in this case checks if the word includes
+# 	thing_to_find)
+
+# ** Methods used in my_hash_finding_method **
+# 	hash.select -- returns a hash containing the key/value pairs for the conditions indicated
+#   .keys -- returns an array of the keys of the key/value pairs indicated
+
+# RELEASE 2
+# Teach your accountability group how to use the methods
+# 	Both of the methods I created were fairly similar in that they both relied on the .select
+# 	method in order to return the information I needed in the correct format. They differ in
+# 	the format they return information -- array.select returns an array of the elements that 
+# 	meet the conditions you specify (in this case, it returns an array with words that include
+# 	the thing to find). hash.select, however, returns a hash with the key/value pairs that meet
+# 	the condition you specify (in this case, it will return pairs with values that equal the
+# 	thing to find). In order to return ONLY the keys in the form of an array, .keys was utilized.
+# Share any tricks you used to find and decipher the Ruby Docs
+# 	Oh man, to be honest what helps me intially is to control-f keywords that I know will help
+# 	me find any relevant methods. So I found .select by searching for the keyword "contain"
+# 	because I figured that would help me find a method that searches through data containing x.
+# 	Also, if I want the method to return something specific, I would search for that. So for the
+# 	hash method I knew that I wanted the output to be an array of keys, so I searched "array" in
+# 	the hash docs and .keys was one of the only methods that came up which worked perfectly!
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
