@@ -134,6 +134,7 @@ end
 #  	.map!  - This method just inputs new values into an array.
 #	.is_a?  - This checks if an element is a certain thing, so is_a?(Integer) checks if an element is an integer.
 #   	.each  - This just iterates through an array or hash.
+#       .dup  - This just duplicates the element, creating a new one that you can use.
 
 # 2. Teach your accountability group how to use the methods
 
